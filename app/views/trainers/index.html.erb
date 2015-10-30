@@ -5,8 +5,9 @@
       <table class="table">
         <tbody>
           <% @trainers.each do |trainer| %>
-            <tr>
+            <tr><%= pokemon.name %>: <%= pokemon.level %></li>
               <%= render trainer %>
+              <% end %>
             </tr>
           <% end %>
         </tbody>
